@@ -23,16 +23,16 @@
         <main class="container">
             <div class="container_input">
     
-                <input type="text" placeholder="inserisci qui TODO">
-                <button>Invia</button>
+                <input type="text" placeholder="inserisci qui TODO" v-model="newTask">
+                <button @click="addTask">Aggiungi</button>
             </div>
     
     
             <div class="container_task">
     
                 <ul>
-                    <li class="d_flex justify_space" v-for="task in arrayTask">
-                        <span> {{task.task}}</span><i class="fa-solid fa-xmark"></i>
+                    <li class="d_flex justify_space" v-for="(duty, index) in arrayTask">
+                        <span> {{duty.task}}</span><i class="fa-solid fa-xmark"  @click="removeTask(index)"></i>
                     </li>
                 </ul>
             </div>

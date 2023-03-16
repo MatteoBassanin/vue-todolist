@@ -3,6 +3,8 @@ const { createApp } = Vue
 createApp({
   data() {
     return {
+      newTask : "",
+      newtodo : "",
       arrayTask:[
         {
             task:"andare a fare la spesa",
@@ -18,5 +20,22 @@ createApp({
         }
       ]
     }
-  }
+  },
+  methods:{
+    removeTask(index) {
+        this.arrayTask.splice(index,1);
+    },
+    addTask(){
+        newTask = {
+            task : this.newTask,
+            todo : this.randomToDo(),
+        }
+        this.arrayTask.unshift(newTask),
+        this.newTask = ""
+    },
+    randomToDo(){
+         Math.random() < 0.5;
+    }
+  },
+
 }).mount('#app')
