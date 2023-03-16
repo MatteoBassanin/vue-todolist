@@ -35,10 +35,17 @@ createApp({
     },
     randomToDo(){
          return Math.random() < 0.5;
-         
-        
+                 
     },
-   
+    toogleTodo(task){
+        if (task.todo == true){
+            
+            task.todo = false;
+        }else{
+            task.todo = true;
+        }
+       
+    },
   },
 
 }).mount('#app')
