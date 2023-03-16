@@ -34,8 +34,13 @@ createApp({
         this.newTask = ""
     },
     randomToDo(){
-         Math.random() < 0.5;
-    }
+         return Math.random() < 0.5;
+         
+        
+    },
+    addingClass(){
+        addclassList.add("done");
+    },
   },
 
 }).mount('#app')
