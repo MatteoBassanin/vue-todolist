@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header img{
+    
+    height: 70px;
+}
+
+header{
+    text-align: center;
+}
+
+.container_input{
+    text-align: center;
+    margin: 40px 0;
+}
+
+input,button{
+    padding: 10px;
+}
+
+
+.container_task{
+    width: 70%;
+    margin: auto;
+    background-color: beige;
+    height: 400px;
+}
+
+
+li{
+    list-style: none;
+    padding: 20px;
+    border-bottom: 1px solid grey;
+}
+
+.d_flex{
+    display: flex;
+}
+
+.justify_space{
+    justify-content: space-between;
+}

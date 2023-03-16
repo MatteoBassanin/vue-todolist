@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+    <div id="app">
+
+        <header>
+         
+            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fassets.codebar.io%2Fb%2Fuploads%2Fsponsor%2Favatar%2F828%2Fboolean-logo.png&f=1&nofb=1&ipt=0f48992ec42ba6e9cca68d3d1185a294aa11d5f4b7dc9d0f8276d78b73f4e307&ipo=images" alt="">
+        </header>
+        
+        <main class="container">
+            <div class="container_input">
+    
+                <input type="text" placeholder="inserisci qui TODO">
+                <button>Invia</button>
+            </div>
+    
+    
+            <div class="container_task">
+    
+                <ul>
+                    <li class="d_flex justify_space" v-for="task in arrayTask">
+                        <span> {{task.task}}</span><i class="fa-solid fa-xmark"></i>
+                    </li>
+                </ul>
+            </div>
+    
+        </main>
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
