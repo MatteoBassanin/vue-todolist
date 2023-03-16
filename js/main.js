@@ -38,9 +38,7 @@ createApp({
          
         
     },
-    addingClass(){
-        addclassList.add("done");
-    },
+   
   },
 
 }).mount('#app')
